@@ -158,3 +158,65 @@ public class ReverseNumber {
         System.out.println("Reversed Number = " + rev);
     }
 }
+
+//the maximume number pro.
+import java.util.Scanner ;
+public  class Net{
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in) ;
+    System.out.println("plz enter your 1 number :");
+    int a=input.nextInt() ;
+    System.out.println("plz enter your 2 number :"); 
+    int b=input.nextInt() ;
+    System.out.println("plz enter your 3 number :"); 
+    int c=input.nextInt() ;
+    
+    if (a>b && a>c )
+            System.out.println("the maximame number btwen " + a +" , " + b +" and "+c+" is "+a);
+    else if (b>a && b>c )
+            System.out.println("the maximame number btwen " + a +" , " + b +" and "+c+" is "+b);
+    else 
+        System.out.println("the maximame number btwen " + a +" , " + b +" and "+c+" is "+c);
+        
+      
+      
+    }
+}
+
+// the canti grade to farinhayte degree
+
+import java.util.Scanner;
+
+
+ 
+public class Net2 {
+    public static void main(String[] args){
+        Scanner inp=new Scanner(System.in) ;
+        
+        System.out.println("plz enter the your system cill or far  :");
+        String x = inp.next();
+        double result ;
+        if (x.equalsIgnoreCase("cill")){
+            System.out.println("plz enter your quwant in cill :");
+            int i=inp.nextInt();
+            result=(9.0/5*i)+32;
+            System.out.println("the far is " + result);
+        }
+        else if (x.equalsIgnoreCase("far")){
+                System.out.println("plz enter your quwant in far :");
+                int i=inp.nextInt();
+                result=(5.0/9)*(i-32);
+                System.out.println("the cil is " + result);
+                
+                }
+        else 
+            System.out.println("invalid");
+       
+        
+        
+    }
+    
+    
+    
+    
+}
