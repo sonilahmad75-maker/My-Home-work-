@@ -1,0 +1,183 @@
+Welcome to fish, the friendly interactive shell
+Type help for instructions on how to use fish
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main)> sudo efibootmgr
+[sudo: authenticate] Password:    
+sudo: 'efibootmgr': command not found
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main) [1]> sudo apt install efibootmgr
+Installing:                     
+  efibootmgr
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 176
+  Download size: 31.9 kB
+  Space needed: 95.2 kB / 452 GB available
+
+Ign:1 http://af.archive.ubuntu.com/ubuntu resolute/main amd64 efibootmgr amd64 18-4ubuntu1
+Ign:1 http://af.archive.ubuntu.com/ubuntu resolute/main amd64 efibootmgr amd64 18-4ubuntu1
+Ign:1 http://af.archive.ubuntu.com/ubuntu resolute/main amd64 efibootmgr amd64 18-4ubuntu1
+Err:1 http://af.archive.ubuntu.com/ubuntu resolute/main amd64 efibootmgr amd64 18-4ubuntu1
+  Temporary failure resolving 'af.archive.ubuntu.com'
+Error: Failed to fetch http://af.archive.ubuntu.com/ubuntu/pool/main/e/efibootmgr/efibootmgr_18-4ubuntu1_amd64.deb  Temporary failure resolving 'af.archive.ubuntu.com'
+Error: Unable to fetch some archives, maybe run apt update or try with --fix-missing?
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main) [100]> sudo apt install efibootmgr
+Installing:                     
+  efibootmgr
+
+Summary:
+  Upgrading: 0, Installing: 1, Removing: 0, Not Upgrading: 176
+  Download size: 31.9 kB
+  Space needed: 95.2 kB / 452 GB available
+
+Get:1 http://af.archive.ubuntu.com/ubuntu resolute/main amd64 efibootmgr amd64 18-4ubuntu1 [31.9 kB]
+Fetched 31.9 kB in 1s (31.3 kB/s)       
+Selecting previously unselected package efibootmgr.
+(Reading database… 185100 files and directories currently installed.)
+Preparing to unpack …/efibootmgr_18-4ubuntu1_amd64.deb…
+Unpacking efibootmgr (18-4ubuntu1)…
+Setting up efibootmgr (18-4ubuntu1)…
+Processing triggers for man-db (2.13.1-1build1)…
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main)> sudo efibootmgr
+EFI variables are not supported on this system.
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main) [2]> sudo apt install efibootmgr
+efibootmgr is already the newest version (18-4ubuntu1).
+Summary:                    
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 176
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main)> sudo efibootmgr
+EFI variables are not supported on this system.
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main) [2]> ls /sys/firmware/efi
+ls: cannot access '/sys/firmware/efi': No such file or directory
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main) [2]> sudo fdisk -l
+Disk /dev/loop0: 66.85 MiB, 70094848 bytes, 136904 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop1: 66.8 MiB, 70049792 bytes, 136816 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop2: 19.65 MiB, 20602880 bytes, 40240 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop3: 4 KiB, 4096 bytes, 8 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop4: 273.7 MiB, 286994432 bytes, 560536 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop5: 16.5 MiB, 17301504 bytes, 33792 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop6: 19.96 MiB, 20930560 bytes, 40880 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop7: 606.08 MiB, 635518976 bytes, 1241248 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sda: 465.76 GiB, 500107862016 bytes, 976773168 sectors
+Disk model: WDC WD5000AAKX-7
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 026CB9ED-0C15-4608-98F0-BEB1F5F79DCB
+
+Device     Start       End   Sectors   Size Type
+/dev/sda1   2048      4095      2048     1M BIOS boot
+/dev/sda2   4096 976771071 976766976 465.8G Linux filesystem
+
+
+Disk /dev/loop9: 394.98 MiB, 414167040 bytes, 808920 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop8: 91.69 MiB, 96141312 bytes, 187776 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop11: 18.83 MiB, 19746816 bytes, 38568 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop12: 15.69 MiB, 16449536 bytes, 32128 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop10: 18.82 MiB, 19738624 bytes, 38552 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop13: 49.26 MiB, 51654656 bytes, 100888 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop14: 580 KiB, 593920 bytes, 1160 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop15: 227.55 MiB, 238604288 bytes, 466024 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main)> 
+
+Welcome to fish, the friendly interactive shell
+Type help for instructions on how to use fish
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main)> lsblk -f
+NAME   FSTYPE   FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+loop0  squashfs 4.0                                                    0   100% /snap/core24/1587
+loop1  squashfs 4.0                                                    0   100% /snap/core24/1643
+loop2  squashfs 4.0                                                    0   100% /snap/desktop-security-center/150
+loop3  squashfs 4.0                                                    0   100% /snap/bare/5
+loop4  squashfs 4.0                                                    0   100% /snap/firefox/8107
+loop5  squashfs 4.0                                                    0   100% /snap/firmware-updater/226
+loop6  squashfs 4.0                                                    0   100% /snap/desktop-security-center/151
+loop7  squashfs 4.0                                                    0   100% /snap/gnome-46-2404/153
+loop8  squashfs 4.0                                                    0   100% /snap/gtk-common-themes/1535
+loop9  squashfs 4.0                                                    0   100% /snap/mesa-2404/1165
+loop10 squashfs 4.0                                                    0   100% /snap/prompting-client/204
+loop11 squashfs 4.0                                                    0   100% /snap/prompting-client/222
+loop12 squashfs 4.0                                                    0   100% /snap/snap-store/1367
+loop13 squashfs 4.0                                                    0   100% /snap/snapd/26865
+loop14 squashfs 4.0                                                    0   100% /snap/snapd-desktop-integration/361
+loop15 squashfs 4.0                                                    0   100% /snap/thunderbird/1057
+sda                                                                             
+├─sda1                                                                          
+└─sda2 ext4     1.0         42b7fddc-f2c8-47f9-b3f0-3a5612aa1ebc  420.6G     3% /
+sr0                                                                             
+sadat@sadat-OptiPlex-9020 ~/D/m/test (main)> 
